@@ -2,7 +2,7 @@
 <html>
 
     <head>
-        <title>2015726101 ±Ë¡÷¿±</title>
+        <title>2015726101</title>
         <style type="text/css">
            
            #tabs{
@@ -208,21 +208,21 @@ color:white;
             });
 
             $(function(){
-           max = 30;      //±€ææ √÷¥Î ≈©±‚
-           min = 10;     //±€ææ √÷º“ ≈©±‚
+           max = 30;      //Í∏ÄÏî® ÏµúÎåÄ ÌÅ¨Í∏∞
+           min = 10;     //Í∏ÄÏî® ÏµúÏÜå ÌÅ¨Í∏∞
            var fontSize = 20; 
-        $("#zoomin").click(function (e){    //+πˆ∆∞¿ª ¥©∏£∏È
+        $("#zoomin").click(function (e){    //+Î≤ÑÌäºÏùÑ ÎàÑÎ•¥Î©¥
         if(fontSize < max){
             fontSize = fontSize + 2; 
-        }else alert("∞°¿Â ≈´ ∆˘∆Æ≈©±‚ ¿‘¥œ¥Ÿ.");
-        $("#list").css({"font-size": fontSize + "px"});//∆˘∆ÆªÁ¿Ã¡Ó ∫Ø∞Ê
+        }else alert("Í∞ÄÏû• ÌÅ∞ Ìè∞Ìä∏ÌÅ¨Í∏∞ ÏûÖÎãàÎã§.");
+        $("#list").css({"font-size": fontSize + "px"});//Ìè∞Ìä∏ÏÇ¨Ïù¥Ï¶à Î≥ÄÍ≤Ω
         $("#latex").css({"font-size": fontSize + "px"});
     });
-    $("#zoomout").click(function (e){   //-πˆ∆∞¿ª ¥©∏£∏È
+    $("#zoomout").click(function (e){   //-Î≤ÑÌäºÏùÑ ÎàÑÎ•¥Î©¥
         if(fontSize > min){ 
             fontSize = fontSize-2;  
-        }else alert("∞°¿Â ¿€¿∫ ∆˘∆Æ≈©±‚ ¿‘¥œ¥Ÿ.");
-        $("#list").css({"font-size": fontSize + "px"});//∆˘∆ÆªÁ¿Ã¡Ó ∫Ø∞Ê 
+        }else alert("Í∞ÄÏû• ÏûëÏùÄ Ìè∞Ìä∏ÌÅ¨Í∏∞ ÏûÖÎãàÎã§.");
+        $("#list").css({"font-size": fontSize + "px"});//Ìè∞Ìä∏ÏÇ¨Ïù¥Ï¶à Î≥ÄÍ≤Ω 
         $("#latex").css({"font-size": fontSize + "px"});
     }); 
 });
@@ -231,15 +231,15 @@ color:white;
             $(document).ready(function () {
                 var parser = math.parser();
     
-                var value = '0'; //∞ËªÍ∞™µÈ¿ª ∫∏ø©¡÷¥¬ ∫Øºˆ
-                var saveValue=''; //∞ËªÍ ∞·∞˙∞™ ¿˙¿Â«ÿ¡÷¥¬ ∫Øºˆ
-                var infor=''; //∞ËªÍ∞˙¡§¿ª ¿˙¿Â«ÿ¡÷¥¬ ∫Øºˆ
+                var value = '0'; //Í≥ÑÏÇ∞Í∞íÎì§ÏùÑ Î≥¥Ïó¨Ï£ºÎäî Î≥ÄÏàò
+                var saveValue=''; //Í≥ÑÏÇ∞ Í≤∞Í≥ºÍ∞í Ï†ÄÏû•Ìï¥Ï£ºÎäî Î≥ÄÏàò
+                var infor=''; //Í≥ÑÏÇ∞Í≥ºÏ†ïÏùÑ Ï†ÄÏû•Ìï¥Ï£ºÎäî Î≥ÄÏàò
     
               
                 $('#result').text(value);
                 $('#latex').html('$$' + math.parse(value).toTex() + '$$');
                        
-                $('.key2').each(function (index, key2) {   //key2ø° ¿÷¥¬ πˆ∆∞¿Ã ¥≠∏±∂ß
+                $('.key2').each(function (index, key2) {   //key2Ïóê ÏûàÎäî Î≤ÑÌäºÏù¥ ÎàåÎ¶¥Îïå
                     $(this).click(function (e) {
                         if (value == '0') value = '';
     
@@ -258,16 +258,16 @@ color:white;
 
     
     
-                $('.key').each(function (index, key) {  //keyø° ¿÷¥¬ πˆ∆∞¿Ã ¥≠∏±∂ß
+                $('.key').each(function (index, key) {  //keyÏóê ÏûàÎäî Î≤ÑÌäºÏù¥ ÎàåÎ¶¥Îïå
                     $(this).click(function (e) {
                         if (value == '0') value = '';
     
     
     
-                        if($(this).text() =='Enter')//Enterπˆ∆∞¿Ã ¥≠∏±∂ß
+                        if($(this).text() =='Enter')//EnterÎ≤ÑÌäºÏù¥ ÎàåÎ¶¥Îïå
                     {
                         try
-                        {   infor=infor+value+"   ";//infor ∞ËªÍ∞˙¡§¿ª ¿˙¿Â«ÿ¡÷¥¬ ∫Øºˆ 
+                        {   infor=infor+value+"   ";//infor Í≥ÑÏÇ∞Í≥ºÏ†ïÏùÑ Ï†ÄÏû•Ìï¥Ï£ºÎäî Î≥ÄÏàò 
                             $('#list').text(infor);  
                             value = parser.eval(value).toString();
                             var tokens = value.split(' ');
@@ -278,7 +278,7 @@ color:white;
                             }
                             $('#result').text(value); 
                                     saveValue='';               
-                                   saveValue=value;//¿˙¿Âµ» ∞™¿ª ≥™≈∏≥ª¡÷±‚ ¿ß«— ∫Øºˆ
+                                   saveValue=value;//Ï†ÄÏû•Îêú Í∞íÏùÑ ÎÇòÌÉÄÎÇ¥Ï£ºÍ∏∞ ÏúÑÌïú Î≥ÄÏàò
                                   value = '0';
                         }
                         catch (e)
@@ -292,14 +292,14 @@ color:white;
                     }
     
                         else {
-                            if ($(this).text() == 'CL') {    //CL πˆ∆∞¿Ã ¥≠∏±∂ß
+                            if ($(this).text() == 'CL') {    //CL Î≤ÑÌäºÏù¥ ÎàåÎ¶¥Îïå
                                 value = '0';
                                 infor='';
                                 saveValue='';
                                 $('#list').text(infor);  
                                 $('#result').text(value);
                             }
-                            else if ($(this).text() == '°Á') {  //°Áπˆ∆∞¿Ã ¥≠∏±∂ß
+                            else if ($(this).text() == '‚Üê') {  //‚ÜêÎ≤ÑÌäºÏù¥ ÎàåÎ¶¥Îïå
                                 value = value.substring(0, value.length - 1);
                                 $('#result').text(value);}
                             else {
@@ -333,25 +333,25 @@ color:white;
                            $('#graph3').text(reset);
                 })
 
-                $('#save').click(function (e) {   //¿˙¿Â±‚¥…
+                $('#save').click(function (e) {   //Ï†ÄÏû•Í∏∞Îä•
     localStorage.setItem('val1',saveValue);
     localStorage.setItem('val2',infor); 
     })
     
-    $('#delete').click(function (e) {   //¿˙¿ÂªË¡¶±‚¥…
+    $('#delete').click(function (e) {   //Ï†ÄÏû•ÏÇ≠Ï†úÍ∏∞Îä•
     localStorage.removeItem('val1');
     localStorage.removeItem('val2');
     
     })
     
-    $('#get').click(function (e) {     //∫“∑Øø¿±‚ ±‚¥…
+    $('#get').click(function (e) {     //Î∂àÎü¨Ïò§Í∏∞ Í∏∞Îä•
     var getValue =localStorage.getItem('val1');
     var getValue2 =localStorage.getItem('val2');
     $('#result').text(getValue);
     $('#list').text(getValue2);
     })
             })
-    //±◊∑°«¡ «‘ºˆ 
+    //Í∑∏ÎûòÌîÑ Ìï®Ïàò 
             function Graph(config) {
         
           this.canvas = document.getElementById(config.canvasId);
@@ -378,16 +378,16 @@ color:white;
           this.scaleX = this.canvas.width / this.rangeX;
           this.scaleY = this.canvas.height / this.rangeY;
   
-          //x,y √‡ ±◊∏Æ±‚
+          //x,y Ï∂ï Í∑∏Î¶¨Í∏∞
           this.drawXAxis();
           this.drawYAxis();
 
           
         }
   
-       /*√‡ ±◊∏Æ±‚*/
+       /*Ï∂ï Í∑∏Î¶¨Í∏∞*/
 
-//x√‡ ±◊∏Æ±‚
+//xÏ∂ï Í∑∏Î¶¨Í∏∞
 Graph.prototype.drawXAxis = function() {
           var context = this.context;
           context.save();
@@ -405,7 +405,7 @@ Graph.prototype.drawXAxis = function() {
           context.textAlign = 'center';
           context.textBaseline = 'top';
   
-          // øﬁ¬  ¥´±› ±ﬂ±‚
+          // ÏôºÏ™Ω ÎààÍ∏à Í∏ãÍ∏∞
           xPos = this.centerX - xPosIncrement;
           unit = -1 * this.unitsPerTick;
           while(xPos > 0) {
@@ -417,7 +417,7 @@ Graph.prototype.drawXAxis = function() {
             xPos = Math.round(xPos - xPosIncrement);
           }
   
-          // ø¿∏•¬  ¥´±› ±ﬂ±‚
+          // Ïò§Î•∏Ï™Ω ÎààÍ∏à Í∏ãÍ∏∞
           xPos = this.centerX + xPosIncrement;
           unit = this.unitsPerTick;
           while(xPos < this.canvas.width) {
@@ -432,7 +432,7 @@ Graph.prototype.drawXAxis = function() {
         };
   
 
-        //y√‡ ±◊∏Æ±‚
+        //yÏ∂ï Í∑∏Î¶¨Í∏∞
         Graph.prototype.drawYAxis = function() {
           var context = this.context;
           context.save();
@@ -450,7 +450,7 @@ Graph.prototype.drawXAxis = function() {
           context.textAlign = 'right';
           context.textBaseline = 'middle';
   
-          //¿ß¬  ¥´±› ±◊∏Æ±‚
+          //ÏúÑÏ™Ω ÎààÍ∏à Í∑∏Î¶¨Í∏∞
           yPos = this.centerY - yPosIncrement;
           unit = this.unitsPerTick;
           while(yPos > 0) {
@@ -462,7 +462,7 @@ Graph.prototype.drawXAxis = function() {
             yPos = Math.round(yPos - yPosIncrement);
           }
   
-          // æ∆∑ß¬  ¥´±› ±◊∏Æ±‚
+          // ÏïÑÎû´Ï™Ω ÎààÍ∏à Í∑∏Î¶¨Í∏∞
           yPos = this.centerY + yPosIncrement;
           unit = -1 * this.unitsPerTick;
           while(yPos < this.canvas.height) {
@@ -477,7 +477,7 @@ Graph.prototype.drawXAxis = function() {
         };
 
 
-//±◊∑°«¡ ±◊∏Æ±‚
+//Í∑∏ÎûòÌîÑ Í∑∏Î¶¨Í∏∞
           function draw() {
 
          var range = document.getElementById("range").value;
@@ -509,11 +509,11 @@ Graph.prototype.drawXAxis = function() {
         Graph.prototype.transformContext = function() {
           var context = this.context;
   
-         this.context.translate(this.centerX+x*16, this.centerY-(16*y)); //¿‘∑¬πﬁ¿∫ ∏∏≈≠ √‡¿Ãµø 
+         this.context.translate(this.centerX+x*16, this.centerY-(16*y)); //ÏûÖÎ†•Î∞õÏùÄ ÎßåÌÅº Ï∂ïÏù¥Îèô 
            context.scale(this.scaleX, -this.scaleY);
         };
 
-        //±◊∑°«¡ π¸¿ß
+        //Í∑∏ÎûòÌîÑ Î≤îÏúÑ
         var myGraph = new Graph({
           canvasId: 'myCanvas',
           minX: -range,
@@ -554,19 +554,19 @@ function erase() {
             <ul>
                 <li>
                     <a href="#tab-1">
-                        <span>∞ËªÍ±‚</span>
+                        <span>Calculator</span>
                     </a>
                 </li>
                 <li>
                     <a href="#tab-2">
-                        <span>±◊∑°«¡</span>
+                        <span>Graph</span>
                     </a>
                 </li>
                 <li>
-                    <!--±€¿⁄ ≈©±‚∏¶ ¥√∑¡¡÷∞Ì ¡Ÿø©¡÷¥¬ πˆ∆∞-->
+                    <!--Í∏ÄÏûê ÌÅ¨Í∏∞Î•º ÎäòÎ†§Ï£ºÍ≥† Ï§ÑÏó¨Ï£ºÎäî Î≤ÑÌäº-->
                         <button id="zoomin">+</button> 
                         <button id="zoomout">-</button>
-                        ±€ææ≈©±‚
+                        font size
                 </li>
             </ul>
             <div id="tab-1">
@@ -575,8 +575,8 @@ function erase() {
                 <div  id="latex" ></div>
                  <div id="result" ></div>
           
-                <div id="aa" > <!--Ω∫≈©∑— π⁄Ω∫-->
-                     ************≥Ì∏Æø¨ªÍ************<br>
+                <div id="aa" > <!--Ïä§ÌÅ¨Î°§ Î∞ïÏä§-->
+                     *******************************<br>
                     <button class="key2" value="<"><</button>
                     <button  class="key2" value=">">></button>
                     <button  class="key2" value="<="><=</button>
@@ -584,50 +584,50 @@ function erase() {
                     <button  class="key2" value="==">==</button>
                     <button  class="key2" value="!=">!=</button>
 
-                    <br> ***************∞˝»£*************<br>
+                    <br> *******************************<br>
                             <button  class="key2" value="(">(</button>
                             <button  class="key2" value=")">)</button>
                             <button  class="key2" value="[">[</button>
                             <button  class="key2" value="]">]</button>
-                            <br> ************«‘ºˆ/∫Øºˆ************<br>
+                            <br> *********************************<br>
                             <button  class="key2" value="w">w</button>
                             <button  class="key2" value="x">x</button>
                             <button  class="key2" value="y">y</button>
                             <button  class="key2" value="z">z</button>
                             <button class="key2" value="f">f</button>
                             <button  class="key2" value="g">g</button>
-                            <br> ***************¡¶∞ˆ∑Á∆Æ***********<br>
+                            <br> *********************************<br>
                             <button class="key2" value="^">^</button>
-                            <button  class="key2" value="sqrt">°Ó</button>
+                            <button  class="key2" value="sqrt">‚àö</button>
                            
                        
-                            <br>**************¡ˆºˆ∑Œ±◊*************<br>
+                            <br>*********************************<br>
                             <button  class="key2" value="exp">e^x</button>
                             <button  class="key2" value="log(">log</button>
                             <button  class="key2" value="i">i</button>
                             <button  class="key2" value="e">e</button>
-                            <button  class="key2" value="pi">•</button>
-                            <br>*************∫§≈Õ«‡∑ƒ***************<br>
+                            <button  class="key2" value="pi">œÄ</button>
+                            <br>*******************************<br>
                            
-                            <button  class="key2" value="cross">u °ø v</button>
+                            <button  class="key2" value="cross">u √ó v</button>
                             <button  class="key2" value="det">|A|</button>
                             <button  class="key2" value="inv">A^-1</button>
-                            <br>*************ªÔ∞¢«‘ºˆ************<br>
+                            <br>***********************************<br>
                             <button  class="key2" value="sin(">sin</button>
                             <button  class="key2" value="cos(">cos</button>
                          <button  class="key2" value="tan(">tan</button>
-                         <br>**************¥‹¿ß***************<br>
+                         <br>*************************************<br>
                          <button  class="key2" value="cm">cm</button>
                          <button  class="key2" value="inch">inch</button>
                          
                 </div>
-                <div id="bb"> <!--∞ËªÍ±‚ º˝¿⁄πˆ∆∞ π⁄Ω∫-->
+                <div id="bb"> <!--Í≥ÑÏÇ∞Í∏∞ Ïà´ÏûêÎ≤ÑÌäº Î∞ïÏä§-->
     
                
                     <span class="key" >7</span>
                     <span class="key">8</span>
                     <span class="key">9</span>
-                    <span class="key">°Á</span>
+                    <span class="key"><-</span>
                             <span class="key">=</span>
                             
                             <span class="key">4</span>
@@ -652,13 +652,13 @@ function erase() {
     
                 </div>
                <br><br><br>
-              <!--¿˙¿Â,∫“∑Øø¿±‚,¿˙¿ÂªË¡¶ πˆ∆∞µÈ-->
+              <!--Ï†ÄÏû•,Î∂àÎü¨Ïò§Í∏∞,Ï†ÄÏû•ÏÇ≠Ï†ú Î≤ÑÌäºÎì§-->
               <!--
-                <button id="save">¿˙¿Â</button>      
-                <button id="get">∫“∑Øø¿±‚</button>
-                <button id="delete">¿˙¿ÂªË¡¶</button>
+                <button id="save">Ï†ÄÏû•</button>      
+                <button id="get">Î∂àÎü¨Ïò§Í∏∞</button>
+                <button id="delete">Ï†ÄÏû•ÏÇ≠Ï†ú</button>
                 -->
-                <h5>±◊∑°«¡ &nbsp;
+                <h5>graph &nbsp;
                 <button id="btn1">1</button>
                 <button id="btn2">2</button>
                 <button id="btn3">3</button>
@@ -668,28 +668,28 @@ function erase() {
                    
                       
                         <form name="myForm">
-                                <h5> ¡§¿«ø™<input id="range" type="text" value="10" size="2"> &nbsp;
-                                    √‡¿Ãµø:
+                                <h5> axis<input id="range" type="text" value="10" size="2"> &nbsp;
+                                    axis shift:
                                     x <input id="x" type="text" value="0" size="1">
                                     y <input id="y" type="text" value="0" size="1">
                                     <br>
-                                    <button type="button" onclick="draw()">±◊∏Æ±‚</button>
-                                    <button type="button" onclick="erase()">¡ˆøÏ±‚</button>
+                                    <button type="button" onclick="draw()">draw</button>
+                                    <button type="button" onclick="erase()">erase</button>
                               
         
                               </form>
                               
                       
                       <div id="canvasdiv" align="center" style="border-width:2px ; border-color:black ; border-style:solid ; padding:0;">
-                          <h4 >±◊∑°«¡</h4>
+                          <h4 >Graph</h4>
                           <canvas id="myCanvas" width="306" height="350"></canvas>
                         </div>
                       
       
-                       ±◊∑°«¡1(√ ∑œ)<div  id="graph1" ></div><br>
-                       ±◊∑°«¡2(∆ƒ∂˚) <div  id="graph2" ></div><br>
-                       ±◊∑°«¡3 (ª°∞≠)<div  id="graph3" ></div><br>
-                       <button id="delete">√ ±‚»≠</button>
+                       graph1(green)<div  id="graph1" ></div><br>
+                       graph2(blue) <div  id="graph2" ></div><br>
+                        graph3 (red)<div  id="graph3" ></div><br>
+                       <button id="delete">delete</button>
                    
            
                     </h5>
